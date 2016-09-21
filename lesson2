@@ -1,0 +1,77 @@
+<html>
+<style>
+td{
+        background:yellow
+       }
+       table.layout
+    {
+        
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+
+td.menu{
+  background-color: #f5f5f5;
+  width: 33%;
+  border: 5px solid white;
+}
+td.menu{
+  background-color: #f5f5f5;
+  width: 33%;
+  border: 5px solid white;
+}
+td.menu:hover{
+  background-color: #a5a5f5
+}
+</style>
+<script type="text/javascript">
+
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display = 'block';
+c3_elem.style.display = 'none';
+}
+
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display = 'none';
+c1_elem.style.display = 'none';
+}
+
+</script>
+<body>
+
+<h1>Finland</h1>
+
+<table class="layout">
+<td class="menu"></td>
+
+<tr>
+  <td id="m1" class="menu" onclick="show_text()">Text</td>
+  <td id="m2" class="menu" onclick="show_pic()">Picture</td>
+  <td id="m3" class="menu" onclick="alert()">victorina</td>
+</tr>
+
+<tr>
+  <td colspan="3">
+
+  <div id="c1" style="display:none">
+Helsinki</br>
+  </div>
+  <div id="c2"><img src="files/cat.jpg"/></div>
+  <div id="c3"></div>
+
+  </td>
+</tr>
+
+</table>
+</body>
+</html>
