@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+<script>
+function check1(){
+q1elem=document.get elementbyid(cb1)
+f(q1elem.checked){
+alert("Da")}
+else{Alert("nicht")
+}
+}
+	function check() {
+	alert ("U ARE THE BEST IN DA WHOLE WRLD!@!!!!!!")
+	}
+</script>
+<p>
+<font size="5" face="Impact">Готов к контрольной по C#?</font><br>
+<input type = "checkbox" id = "cb1"><label for = "cb1">готов к контрольной</label><br>
+<input type = "checkbox" id = "cb2"><label for = "cb2">не готов к контрольной</label><br>
+<input type = "checkbox" id = "cb3"><label for = "cb3">не готов жить</label><br>
+<font size="5" face="Impact">Как дела?</font><br>
+
+
+<input type = "radio"  name = "1">норм<br>
+<input type = "radio" name  = "1">не оч<br>
+<input type = "radio" name  = "1">оч не оч<br>
+<input type = "text"id="q4">доров<br>
+<input type = "button" value = "check" onclick = "check()">
