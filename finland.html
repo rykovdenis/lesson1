@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Finland</title>
+<style>
+body {
+background-color: #00008B;
+background-repeat: repeat-x;
+}
+a {
+text-decoration:none;
+}
+th {
+bordercolor = "red"
+border = "1"
+width = 100%
+}
+td {
+bordercolor = "red"
+border = "1"
+width = 100%
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: rgb(33,70,139);
+}
+li {
+float: left;
+}
+li a, .dropbtn {
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+background-color: rgb(154,28,40);
+}
+li.dropdown {
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+display: block;
+}
+.text{
+text-align: center;
+}
+</style>
+<html>
+<style>
+table.layout{
+  border-collapse: collapse;
+  width: 80%;
+  text-align: center;
+}
+td.menu{
+  background-color: #f5f5f5;
+  width: 50%;
+  border: 5px solid white;
+}
+td.menu:hover{
+  background-color: #a5a5f5
+}
+</style>
+<script type="text/javascript">
+function show_pic(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c2_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='block';
+c3_elem.style.display='none';
+}
+function show_text(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c2_elem = document.getElementById("c3");
+c1_elem.style.display='block';
+c2_elem.style.display='none';
+c3_elem.style.display='none';
+}
+function show_map(){
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c2_elem = document.getElementById("c3");
+c1_elem.style.display='none';
+c2_elem.style.display='none';
+c3_elem.style.display='block';
+}
+</script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [60.17, 24.93],
+                zoom: 7
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([60.17, 24.93], {
+                hintContent: '{Helsinki!',
+                balloonContent: 'Столица Финляндии'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+
+</html>
+</head>
+<body>
+<p> <br>
+
+<font size="5" face="Impact"><div class = "text">tervetullut!(добро пожаловать!)</div></font>
+</p><div class = "text">
+</div>
+<p>
+
+</p>
+<p>
+<ul>
+<li><a id="m1" class="menu" onclick="show_text()">главная </a></li>
+<li><a id="m3" class="menu" onclick="show_map()" >Карта</a></li>
+<li class="dropdown">
+<a href="#" class="dropbtn">
+информация
+</a>
+<div class="dropdown-content">
+<a href="https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%BD%D0%BB%D1%8F%D0%BD%D0%B4%D0%B8%D1%8F">
+о стране
+</a>
+<a href="">
+краткие факты(закрыто)
+</a>
+<li><a class="active" href="">викторина(закрыто)</a></li>
+  
+</ul>
+</p>
+ <div id="c1" style="display:none">
+  When I find myself in times of trouble <br/>
+Mother Mary comes to me <br/>
+Speaking words of wisdom, let it be. <br/>
+And in my hour of darkness <br/>
+She is standing right in front of me <br/>
+Speaking words of wisdom, let it be. <br/>
+Let it be, let it be <br/>
+Let it be, let it be. <br/>
+Whisper words of wisdom, let it be. <br/>
+When I find myself in times of trouble <br/>
+Mother Mary comes to me <br/>
+Speaking words of wisdom, let it be. <br/>
+And in my hour of darkness <br/>
+She is standing right in front of me <br/>
+Speaking words of wisdom, let it be. <br/>
+Let it be, let it be <br/>
+Let it be, let it be. <br/>
+Whisper words of wisdom, let it be. <br/>
+  </div>
+<div id="map" style="width: 600px; height: 400px"></div>
+
+</body>
+</html>
